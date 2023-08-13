@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+
+
+
+
+<html>
+<head>
+  <title>Panel de control</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Panel de control</h1>
+  <div id="fondo">
+    <div id="contenedor">
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627387"></iframe>
+        <p>Temperatura</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627390"></iframe>
+        <p>Nivel</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627401"></iframe>
+        <p>Oxigeno Disuelto</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627405"></iframe>
+        <p>Flujo</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627388"></iframe>
+        <p>Presión</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627395"></iframe>
+        <p>Ph</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627403"></iframe>
+        <p>Caudal</p>
+      </div>
+      <div class="cuadrado">
+        <iframe width="450" height="260" style="border: 1px solid #7afcac;" src="https://thingspeak.com/channels/2098174/widgets/627406"></iframe>
+        <p>Turbidez</p>
+      </div>
+      <div class="botones">
+        <button class="button" id="openModal">Descargar data</button>
+
+        <div id="modal" class="modal-container">
+          <div class="modal-content">
+            <h2>¿Cúal data desea descargar?</h2>
+            
+              <a>Lista de sensores: </a>
+              <p>   </p>
+              <p>   </p>
+                <ul>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/1.csv">Temperatura</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/3.csv">Nivel</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/5.csv">Oxigeno Disuelto</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/7.csv">Flujo</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/2.csv">Presión</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/4.csv">Ph</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/6.csv">Caudal</a></li>
+                  <li><a href="https://thingspeak.com/channels/2098174/field/8.csv">Turbidez</a></li>
+                </ul>
+              
+            
+            <div id="close" class="close">
+              <p>Cerrar</p>
+            </div>
+          </div>
+          
+
+        </div>
+      </div>
+    </div>
+  </div>
+          <script src="modal.js"></script>
+</body>
+</html>
